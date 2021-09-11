@@ -19,7 +19,7 @@ https://limitless-brushlands-87925.herokuapp.com/
 5. Scan QR code from the expo server started in step3. This will open the app up in your iPhone or Android Phone
 
 ## Preview 
- <img src="https://user-images.githubusercontent.com/60046611/132953226-6e2a28e7-0296-4e97-a187-40b31f95f7a3.jpeg" width="300" height="500">
- <img src="https://user-images.githubusercontent.com/60046611/132953222-810913b4-b0ca-440c-bf29-6dc66e700645.jpeg" width="300" height="500">
+ <img src="https://user-images.githubusercontent.com/60046611/132953226-6e2a28e7-0296-4e97-a187-40b31f95f7a3.jpeg" width="300" height="600">
+ <img src="https://user-images.githubusercontent.com/60046611/132953222-810913b4-b0ca-440c-bf29-6dc66e700645.jpeg" width="300" height="600">
 
 
