@@ -20,5 +20,9 @@ https://limitless-brushlands-87925.herokuapp.com/
 
 ## Preview 
 
-![WhatsApp Image 2021-09-11 at 4 32 28 PM](https://user-images.githubusercontent.com/60046611/132953222-810913b4-b0ca-440c-bf29-6dc66e700645.jpeg)
+![WhatsApp Image 2021-09-11 at 4 32 28 PM]{
+  width: 70%;
+  border: none;
+  background: none;
+}(https://user-images.githubusercontent.com/60046611/132953222-810913b4-b0ca-440c-bf29-6dc66e700645.jpeg)
 ![WhatsApp Image 2021-09-11 at 4 32 24 PM](https://user-images.githubusercontent.com/60046611/132953226-6e2a28e7-0296-4e97-a187-40b31f95f7a3.jpeg)
