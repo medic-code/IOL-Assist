@@ -16,4 +16,4 @@ https://limitless-brushlands-87925.herokuapp.com/
 
 4. Make sure you've installed the expo App on IOS or Android Phone
 
-5. Scan QR code from the expo server setting in step3. This will open the app up in your iPhone or Android Phone
+5. Scan QR code from the expo server started in step3. This will open the app up in your iPhone or Android Phone
