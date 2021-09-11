@@ -11,7 +11,7 @@ const Home = ({ navigation }) => {
 
   
   async function fetchData(text) {
-    const res = await fetch(`http://192.168.0.11:3003/api/iol?iol=${text}`);
+    const res = await fetch(`https://limitless-brushlands-87925.herokuapp.com/api/iol?iol=${text}`);
     res
             .json()
             .then((res) => {
