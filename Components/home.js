@@ -1,13 +1,14 @@
 import React,{useState, Component, Fragment } from 'react'
 import {View, StyleSheet, Text, TextInput, FlatList} from 'react-native';
 import {Title1, Button, SearchBar, withTheme, Icon } from 'react-native-ios-kit';
+import { Searchbar } from 'react-native-paper';
 import { StatusBar } from "expo-status-bar";
 
 
 const Home = ({ navigation }) => {
 
   const [results, setResults] = useState([]);
-
+  const [searchQuery, setSearchQuery] = useState('');
 
   
   async function fetchData(text) {
@@ -40,9 +41,7 @@ const Home = ({ navigation }) => {
 }
   const renderHeader = () => {
     return(
-      <TextInput 
-        style={{height: 60, borderColor: '#000', borderWidth:1, borderRadius: 5}}
-        placeholder="Type here"
+      <Searchbar
         onChangeText={onChangeText}
        
       />
@@ -61,9 +60,10 @@ const Home = ({ navigation }) => {
           alignSelf: 'center',
           justifyContent: 'center'
         }}>
-         
+       
         <FlatList
           data={results}
+         
           renderItem={({ item }) => (
             <Text onPress={() => navigation.navigate('IOL Page',{data: item})} style={{ padding: 10 }}>{item.lens} </Text>
           )}
