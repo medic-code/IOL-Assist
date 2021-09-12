@@ -65,6 +65,21 @@ return (
     </View>
    
   </View>
+  <View style={styles.container}>
+      <Card>
+      <Title1 style={{marginLeft: 5,marginBottom: 10,color: iOSColors.gray }}>Product Information</Title1>
+      <Text style={{fontSize: 16, marginLeft: 10}}>Name: {data.lens}</Text>
+      <Text style={{fontSize: 16, marginLeft: 10}}>Haptic Material: {data.hapmaterial}</Text>
+      <Text style={{fontSize: 16, marginLeft: 10}}>Optic Material: {data.opmaterial}</Text>
+      <Text style={{fontSize: 16, marginLeft: 10}}>Dimensions:</Text>
+      <Text style={{fontSize: 16, marginLeft: 50}}>HAPTIC: {data.haptic} </Text>
+      <Text style={{fontSize: 16,marginLeft: 50,marginBottom: 10}}>OPTIC: {data.opticdia} </Text>
+      </Card>
+    </View>
+    <View style={{flex:0.5,marginLeft:20, marginTop: 5}}>
+      
+      
+    </View>
   <Title1 style={{marginLeft: 10,color: iOSColors.gray,marginBottom:-20}}>Lens Specification</Title1>
     <SafeAreaView style={{flex: 0.8, backgroundColor:'white',marginTop: 30,marginLeft: 10}}>
     
@@ -137,21 +152,7 @@ return (
         inactiveDotScale={0.6}
         tappableDots={true}
       />
-    <View style={styles.container}>
-      <Card>
-      <Title1 style={{marginLeft: 5,marginBottom: 10,color: iOSColors.gray }}>Product Information</Title1>
-      <Text style={{fontSize: 16, marginLeft: 10}}>Name: {data.lens}</Text>
-      <Text style={{fontSize: 16, marginLeft: 10}}>Haptic Material: {data.hapmaterial}</Text>
-      <Text style={{fontSize: 16, marginLeft: 10}}>Optic Material: {data.opmaterial}</Text>
-      <Text style={{fontSize: 16, marginLeft: 10}}>Dimensions:</Text>
-      <Text style={{fontSize: 16, marginLeft: 50}}>HAPTIC {data.haptic} </Text>
-      <Text style={{fontSize: 16,marginLeft: 50,marginBottom: 10}}>OPTIC: {data.opticdia} </Text>
-      </Card>
-    </View>
-    <View style={{flex:0.5,marginLeft:20, marginTop: 5}}>
-      
-      
-    </View>
+    
     <View style={styles.container}>
     
         <Card>
