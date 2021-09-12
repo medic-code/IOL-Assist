@@ -68,12 +68,12 @@ return (
   <View style={styles.container}>
       <Card>
       <Title1 style={{marginLeft: 5,marginBottom: 10,color: iOSColors.gray }}>Product Information</Title1>
-      <Text style={{fontSize: 16, marginLeft: 10}}>Name: {data.lens}</Text>
-      <Text style={{fontSize: 16, marginLeft: 10}}>Haptic Material: {data.hapmaterial}</Text>
-      <Text style={{fontSize: 16, marginLeft: 10}}>Optic Material: {data.opmaterial}</Text>
-      <Text style={{fontSize: 16, marginLeft: 10}}>Dimensions:</Text>
+      <Text style={{fontSize: 16, marginLeft: 10}}><Text style={{fontWeight:'bold'}}>Name:</Text> {data.lens}</Text>
+      <Text style={{fontSize: 16, marginLeft: 10}}><Text style={{fontWeight:'bold'}}>Haptic Material:</Text> {data.hapmaterial}</Text>
+      <Text style={{fontSize: 16, marginLeft: 10}}><Text style={{fontWeight:'bold'}}>Optic Material: </Text>{data.opmaterial}</Text>
+      <Text style={{fontSize: 16, marginLeft: 10,fontWeight:'bold'}}>Dimensions:</Text>
       <Text style={{fontSize: 16, marginLeft: 50}}>HAPTIC: {data.haptic} </Text>
-      <Text style={{fontSize: 16,marginLeft: 50,marginBottom: 10}}>OPTIC: {data.opticdia} </Text>
+      <Text style={{fontSize: 16,marginLeft: 50,marginBottom: 10}}>OPTIC:  {data.opticdia} </Text>
       </Card>
     </View>
     <View style={{flex:0.5,marginLeft:20, marginTop: 5}}>
