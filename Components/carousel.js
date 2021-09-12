@@ -16,8 +16,8 @@ borderRightWidth: 2,
       height: 80,
       padding: 10,
       margin:10 }}>
-      <Text style={{fontSize: 18, fontWeight: "600", alignSelf: 'center', marginBottom: 10}} >{item[0]}</Text>
-      {<Text style={{fontSize: 12, fontWeight: "600", alignSelf: 'center' }} >{item[1]}</Text>
+      <Text style={{fontSize: 13, fontWeight: "600", alignSelf: 'center', marginBottom: 10}} >{item[0]}</Text>
+      {<Text style={{fontSize: 16, fontWeight: "600", alignSelf: 'center' }} >{item[1]}</Text>
     }
       
     </View>

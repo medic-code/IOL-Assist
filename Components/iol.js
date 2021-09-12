@@ -1,7 +1,7 @@
 import React from 'react'
-import {View, StyleSheet, Text, Button, SafeAreaView, Dimensions,Linking} from 'react-native';
+import {View, StyleSheet, Text, Button, SafeAreaView, Dimensions,Linking, ScrollView} from 'react-native';
 import {Title1, Icon } from 'react-native-ios-kit';
-import Carousel from 'react-native-snap-carousel';
+import Carousel, {Pagination} from 'react-native-snap-carousel';
 import CarouselCardItem, {SLIDER_WIDTH, ITEM_WIDTH} from './carousel';
 import {Card } from 'react-native-paper';
 import { iOSColors } from 'react-native-typography'
@@ -30,6 +30,9 @@ const styles = StyleSheet.create({
 
 const Iol = ({route,navigation, }) => {
   const isCarousel = React.useRef(null);
+
+  const [index, setIndex] = React.useState(0)
+  const [index2, setIndex2] = React.useState(0)
   const {data}  = route.params
  
   const lenSpec = ['hapmaterial', 'opmaterial','design','range','steps','opticdia','length','haptic']
@@ -48,6 +51,7 @@ const Iol = ({route,navigation, }) => {
   })
 
 return (
+  <ScrollView>
   <View style={styles.container}> 
     <Button
         title="Go to Home"
@@ -64,35 +68,44 @@ return (
   <Title1 style={{marginLeft: 10,color: iOSColors.gray,marginBottom:-20}}>Lens Specification</Title1>
     <SafeAreaView style={{flex: 0.8, backgroundColor:'white',marginTop: 30,marginLeft: 10}}>
     
-    <View style={{
-      backgroundColor: '#A2A2A2',
-      height: 1,
-      width: Dimensions.width
-    }}></View>
+   
       <View style={{ flex: 1, flexDirection:'row'}}>
 
         <Carousel
           layout="default"
-          layoutCardOffset={3}
+          layoutCardOffset={9}
           ref={isCarousel}
           data={Object.entries(object)}
           renderItem={CarouselCardItem}
           sliderWidth={SLIDER_WIDTH}
-       
+          onSnapToItem={(index) => setIndex(index)}
           itemWidth={ITEM_WIDTH}
           inactiveSlideShift={0}
           useScrollView={true}
         />
+         
       </View>
-    </SafeAreaView>
-    <SafeAreaView style={{flex: 1.3, backgroundColor:'white'}}>
-    <View style={{
-      backgroundColor: '#A2A2A2',
-      height: 1,
-      width: Dimensions.width,
       
-    }}></View>
-
+    </SafeAreaView>
+    
+    <SafeAreaView style={{flex: 1.3, backgroundColor:'white'}}>
+   
+<Pagination
+        dotsLength={lenSpec.length - 1}
+        activeDotIndex={index}
+        carouselRef={isCarousel}
+        dotStyle={{
+          width: 10,
+          height: 10,
+          borderRadius: 5,
+          marginHorizontal: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.92)'
+        }}
+         onSnapToItem={(index) => setIndex(index)}
+        inactiveDotOpacity={0.4}
+        inactiveDotScale={0.6}
+        tappableDots={true}
+      />
 <Title1 style={{marginTop:10,marginLeft: 10,color: iOSColors.gray }}>Optimized IOL Constants</Title1>
       <View style={{ flex: 0.8, flexDirection:'row', justifyContent: 'center', marginLeft: 10}}>
         <Carousel
@@ -105,9 +118,25 @@ return (
           itemWidth={ITEM_WIDTH}
           inactiveSlideShift={0}
           useScrollView={true}
+          onSnapToItem={(index) => setIndex2(index)}
         />
       </View>
     </SafeAreaView>
+    <Pagination
+        dotsLength={constantsArr.length - 1}
+        activeDotIndex={index2}
+        carouselRef={isCarousel}
+        dotStyle={{
+          width: 10,
+          height: 10,
+          borderRadius: 5,
+          marginHorizontal: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.92)'
+        }}
+        inactiveDotOpacity={0.4}
+        inactiveDotScale={0.6}
+        tappableDots={true}
+      />
     <View style={styles.container}>
       <Card>
       <Title1 style={{marginLeft: 5,marginBottom: 10,color: iOSColors.gray }}>Product Information</Title1>
@@ -119,7 +148,7 @@ return (
       <Text style={{fontSize: 16,marginLeft: 50,marginBottom: 10}}>OPTIC: {data.opticdia} </Text>
       </Card>
     </View>
-    <View style={{flex:0.5,marginLeft: 20, marginTop: -45}}>
+    <View style={{flex:0.5,marginLeft:5, marginTop: -25}}>
       
       
     </View>
@@ -131,6 +160,7 @@ return (
         </Card>
     </SafeAreaView>
   </View>
+  </ScrollView>
 )
 }
 
