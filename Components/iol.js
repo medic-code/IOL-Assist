@@ -148,17 +148,17 @@ return (
       <Text style={{fontSize: 16,marginLeft: 50,marginBottom: 10}}>OPTIC: {data.opticdia} </Text>
       </Card>
     </View>
-    <View style={{flex:0.5,marginLeft:5, marginTop: -25}}>
+    <View style={{flex:0.5,marginLeft:20, marginTop: 5}}>
       
       
     </View>
-    <SafeAreaView style={{flex: 0.8, backgroundColor:'white'}}>
+    <View style={styles.container}>
     
         <Card>
         <Title1 style={{marginLeft:10, color: iOSColors.gray }}>Additional Information</Title1>
           <Text onPress={() => Linking.openURL(`${data.link}`)}style={{fontSize: 17, marginTop: 10, marginLeft:20, marginBottom: 10,fontWeight: 'bold'}}>Lens Product Information</Text>
         </Card>
-    </SafeAreaView>
+    </View>
   </View>
   </ScrollView>
 )
