@@ -1,6 +1,14 @@
 # IOL Assist 
 
-A mobile app to assist Opthalmologists with intra-ocular len selection
+IOL Assist is the best mobile app for looking up intraocular lens data and supporting you on the best choice in intraocular lens implantations in your practice.
+
+Whether you are an experienced ophthalmologist, an optometrist, orthoptist, technician, or specialist trainee or resident, having IOL Assist ready can streamline your calculations and point you in the right direction. This is a handy tool for determining the best alternatives for IOL selection, as well as readily accessing data specific to each lens in the market.
+
+Eye care professionals can also benefit from other useful tools, such as quick reference for sulcus implantation, determining the best size of capsular tension rings, and verifying the material of a particular IOL.
+
+IOL Assist provides direct links to the official lens websites for a more in-depth read, as well as links to the most up-to-date constant databases.
+
+IOL Assist provides a no-frills, straight-forward reference to IOL details for everyday practice. This is an invaluable tool for those with a wide selection of lenses in their disposable and those wanting to hone their skills to provide the best possible refractive outcome.
 
 ## Link for Inputting IOL Data
 
