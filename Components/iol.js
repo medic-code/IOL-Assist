@@ -162,8 +162,8 @@ return (
     
     
         <Title1 style={{marginLeft:10, color: '#1C4A7A',fontSize: 17, fontWeight: '600' }}>Additional Information</Title1>
-          <Text onPress={() => Linking.openURL(`${data.link}`)}style={{fontSize: 15, marginTop: 10, marginLeft:20, marginBottom: 10,fontWeight: 'bold', color: 'rgb(54,69,79)'}}>Lens Product Information</Text>
-
+          <Text onPress={() => Linking.openURL(`${data.link}`)}style={{fontSize: 15, marginTop: 10, marginLeft:20, marginBottom: 10,fontWeight: 'bold', color: 'rgb(54,69,79)',textDecorationLine: 'underline'}}>Lens Product Information</Text>
+          <Text onPress={() => Linking.openURL(`http://ocusoft.de/ulib/c1.htm`)} style={{fontSize: 15, marginTop: 10, marginLeft:20, marginBottom: 10,fontWeight: 'bold', color: 'rgb(54,69,79)',textDecorationLine: 'underline'}}>User Group for Laser Interference Biometry</Text>
     </View>
   </View>
   </ScrollView>
