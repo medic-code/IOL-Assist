@@ -1,14 +1,14 @@
 # IOL Assist 
 
-IOL Assist is the best mobile app for looking up intraocular lens data and supporting you on the best choice in intraocular lens implantations in your practice.
+IOL Assist is the best mobile app for reviewing intraocular lens data and supporting you in your practice.
 
-Whether you are an experienced ophthalmologist, an optometrist, orthoptist, technician, or specialist trainee or resident, having IOL Assist ready can streamline your calculations and point you in the right direction. This is a handy tool for determining the best alternatives for IOL selection, as well as readily accessing data specific to each lens in the market.
+Whether you are an experienced ophthalmologist, an optometrist, technician, or specialist trainee, IOL Assist ready can streamline your calculations and point you in the right direction when choosing intraocular lenses. This is a handy tool for determining the best alternatives for IOL selection, as well as readily accessing data specific to each lens in the market.
 
-Eye care professionals can also benefit from other useful tools, such as quick reference for sulcus implantation, determining the best size of capsular tension rings, and verifying the material of a particular IOL.
+Eye care professionals can also benefit from other useful tools, such as quick reference for sulcus implantation, details on viscoelastics, determining the size of capsular tension rings, choosing the best cartridges for implantation, and verifying the material of particular IOLs.
 
-IOL Assist provides direct links to the official lens websites for a more in-depth read, as well as links to the most up-to-date constant databases.
+IOL Assist provides direct links to the official lens websites for a more in-depth read, as well as links to the most up-to-date databases.
 
-IOL Assist provides a no-frills, straight-forward reference to IOL details for everyday practice. This is an invaluable tool for those with a wide selection of lenses in their disposable and those wanting to hone their skills to provide the best possible refractive outcome.
+IOL Assist provides a no-frills, straight-forward reference to IOL details for everyday practice. This is an invaluable tool for those with a wide selection of lenses at their disposal and those wanting to provide the best possible refractive outcome.
 
 ## Link for Inputting IOL Data
 

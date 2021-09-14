@@ -44,9 +44,9 @@ const Iol = ({route,navigation, }) => {
   lensName.forEach((elem,index) => {
     object[elem] = lensArr[index];
   })
-  const constantsArr = ['nominal','haigis0','haigis1','haigis2','hoffer','holl1','srk2','srkt'];
+  const constantsArr = ['nominal','haigis0','haigis1','haigis2','hoffer','holladay','srk2','srkt'];
   let constantVal = Object.entries(data).filter(elem => constantsArr.includes(elem[0])).map(elem => elem[1]);
-  const constants = ['Nominal','Haigis0','Haigis1','Haigis2','Hoffer Q','Holl.1','SRK/T','SRK II'];
+  const constants = ['Nominal','Haigis0','Haigis1','Haigis2','Hoffer Q','Holladay','SRK/T','SRK II'];
   let object2 = {}
   constants.forEach((elem,index) => {
     object2[elem] = constantVal[index];
