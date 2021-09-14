@@ -1,1 +1,1 @@
-web: npx servee web-build
+web: npx serve web-build
