@@ -1,6 +1,6 @@
-import React,{useState, Component, Fragment } from 'react'
-import {View, StyleSheet, Text, TextInput, FlatList} from 'react-native';
-import {Title1, Button, SearchBar, withTheme, Icon } from 'react-native-ios-kit';
+import React,{useState} from 'react'
+import {View, StyleSheet, Text, FlatList} from 'react-native';
+import {Title1, Button,withTheme, Icon } from 'react-native-ios-kit';
 import { Searchbar } from 'react-native-paper';
 import { StatusBar } from "expo-status-bar";
 
@@ -37,7 +37,6 @@ const Home = ({ navigation }) => {
       setTimeout(() => fetchData(text),300)
     } 
     setResults([])
-    console.log(results);
 }
   const renderHeader = () => {
     return(
@@ -52,7 +51,7 @@ const Home = ({ navigation }) => {
     <View style={styles.container}>
       <Button title="IOL Page" onPress={() => navigation.navigate('IOL Page')} />
       <View style={styles.header}>
-      <Title1 style={styles.title}>IOLAssist</Title1>
+      <Title1 style={styles.title}>IOL Assist</Title1>
         <View style={{
           flex:1,
           padding:25,
@@ -72,12 +71,14 @@ const Home = ({ navigation }) => {
           />
         <StatusBar style="auto" />
         </View>
+        <Text style={{marginLeft: 10, fontWeight: '600'}}>Search By</Text>
         <View style={styles.buttons}>
-          <Button style={styles.button} inline rounded>By Company</Button>
-          <Button style={styles.button}inline rounded>By Type</Button>
+          
+          <Button style={styles.button} inline rounded>Company</Button>
+          <Button style={styles.button}inline rounded>Type</Button>
         </View>
+        <Text style={{marginLeft: 10, fontWeight: '600'}}>Tools</Text>
         <View style={styles.buttons}>
-          <Button style={styles.button} inline rounded>By Scenario</Button>
           <Button style={styles.button} inline rounded>Sulcus Change</Button>
         </View>
         <Title1 style={styles.title}>My Favourites</Title1>
@@ -157,11 +158,8 @@ const styles = StyleSheet.create({
     shadowRadius: 1, 
  },
   button: {
-    height: 100,
-    width: 130,
-    paddingVertical: 30,
-    paddingHorizontal: 30,
-  
+    height: 80,
+    width: 160,
   },
   titles: {
     flexDirection: 'row',

@@ -1,10 +1,8 @@
 import React from 'react'
-import {View, StyleSheet, Text,Image, SafeAreaView, Dimensions,Linking, ScrollView} from 'react-native';
-import {Title1, Icon } from 'react-native-ios-kit';
+import {View, StyleSheet, Text,Image, SafeAreaView, Button,Linking, ScrollView} from 'react-native';
+import {Title1} from 'react-native-ios-kit';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
-import CarouselCardItem, {SLIDER_WIDTH, ITEM_WIDTH, ITEM_HEIGHT} from './carousel';
-import {Card } from 'react-native-paper';
-import { iOSColors } from 'react-native-typography'
+import CarouselCardItem, {SLIDER_WIDTH, ITEM_WIDTH} from './carousel';
 import convData from './services/utils';
 
 const styles = StyleSheet.create({
@@ -31,7 +29,7 @@ const styles = StyleSheet.create({
 
 });
 
-const Iol = ({route,navigation, }) => {
+const Iol = ({route}) => {
   const isCarousel = React.useRef(null);
 
   const [index, setIndex] = React.useState(0)
