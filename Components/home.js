@@ -77,7 +77,7 @@ const Home = ({ navigation }) => {
           <Button style={styles.button} inline rounded>Company</Button>
           <Button style={styles.button}inline rounded>Type</Button>
         </View>
-        <View style={{flex:6}}>
+        <View style={{flex:4}}>
           <Text style={{marginLeft: 10, fontWeight: '600'}}>Tools</Text>
           <View style={styles.buttons}>
             <Button style={styles.button} inline rounded>Sulcus Change</Button>

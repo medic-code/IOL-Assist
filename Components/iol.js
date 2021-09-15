@@ -86,13 +86,14 @@ return (
           itemWidth={ITEM_WIDTH}
           inactiveSlideShift={0}
           useScrollView={true}
+        
         />
          
       </View>
       
     </SafeAreaView>
     
-    <SafeAreaView style={{flex: 1.3, backgroundColor:'white'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor:'white'}}>
    
 <Pagination
         dotsLength={lenSpec.length - 1}
@@ -109,6 +110,7 @@ return (
         inactiveDotOpacity={0.4}
         inactiveDotScale={0.6}
         tappableDots={true}
+        containerStyle={{margin:-25}}
       />
 <Title1 style={{marginTop:10,marginLeft: 10,color: '#1C4A7A',fontSize: 17, fontWeight: '600' }}>Optimized IOL Constants</Title1>
       <View style={{ flex: 0.8, flexDirection:'row', justifyContent: 'center', marginLeft: 20}}>
@@ -141,6 +143,7 @@ return (
         inactiveDotOpacity={0.4}
         inactiveDotScale={0.6}
         tappableDots={true}
+        containerStyle={{marginTop:-25}}
       />
     
     <View style={{flex: 1,
