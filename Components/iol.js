@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, StyleSheet, Text, Button, SafeAreaView, Dimensions,Linking, ScrollView} from 'react-native';
+import {View, StyleSheet, Text,Image, SafeAreaView, Dimensions,Linking, ScrollView} from 'react-native';
 import {Title1, Icon } from 'react-native-ios-kit';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 import CarouselCardItem, {SLIDER_WIDTH, ITEM_WIDTH, ITEM_HEIGHT} from './carousel';
@@ -48,7 +48,7 @@ return (
   <ScrollView>
   <View style={styles.container}> 
   <View style={{flex:1, padding:10, flexDirection: 'row',flexWrap: 'wrap', backgroundColor:'rgba(99, 142, 187, 0.5)' }}>
-    <Icon name={'reader'} color={'blue'} size={40}/>
+    <Image source={require('../assets/3piece.png')} style={{width: 50, height:100}}/>
     <View style={{flex:1, flexDirection: 'column', marginLeft: 30, }}>
     {data.lens.split(' ').map(elem => <Title1 style={styles.title} key={elem}>{elem}</Title1>)}
     
