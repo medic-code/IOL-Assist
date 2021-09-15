@@ -2,9 +2,10 @@ import React from 'react'
 import {View, StyleSheet, Text, Button, SafeAreaView, Dimensions,Linking, ScrollView} from 'react-native';
 import {Title1, Icon } from 'react-native-ios-kit';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
-import CarouselCardItem, {SLIDER_WIDTH, ITEM_WIDTH} from './carousel';
+import CarouselCardItem, {SLIDER_WIDTH, ITEM_WIDTH, ITEM_HEIGHT} from './carousel';
 import {Card } from 'react-native-paper';
 import { iOSColors } from 'react-native-typography'
+import convData from './services/utils';
 
 const styles = StyleSheet.create({
   container: {
@@ -36,21 +37,12 @@ const Iol = ({route,navigation, }) => {
   const [index, setIndex] = React.useState(0)
   const [index2, setIndex2] = React.useState(0)
   const {data}  = route.params
- 
+
   const lenSpec = ['hapmaterial', 'opmaterial','design','range','steps','opticdia','length','haptic']
-  let lensArr = Object.entries(data).filter(elem => lenSpec.includes(elem[0])).map(elem => elem[1])
-  const lensName = ['Haptic Material', 'Optic Material', 'Design', 'Range','Steps','Optical Diameter','Overall Length', 'Haptic Angle']
-  let object = {}
-  lensName.forEach((elem,index) => {
-    object[elem] = lensArr[index];
-  })
-  const constantsArr = ['nominal','haigis0','haigis1','haigis2','hoffer','holladay','srk2','srkt', 'barret','rnfb'];
-  let constantVal = Object.entries(data).filter(elem => constantsArr.includes(elem[0])).map(elem => elem[1]);
-  const constants = ['Nominal','Haigis0','Haigis1','Haigis2','Hoffer Q','Holladay 1','SRK/T','SRK II','Barret','RNFB'];
-  let object2 = {}
-  constants.forEach((elem,index) => {
-    object2[elem] = constantVal[index];
-  })
+  const lensName = ['Haptic Material', 'Optic Material', 'Design', 'Range','Steps','Optical Diameter','Overall Length']
+  const constantsArr = ['nominal','srk2','srkt','hoffer','barret','haigis','holladay'];
+  const constants = ['Nominal','SRK/T','SRK II','Hoffer Q','Barret','Haigis','Holladay 1'];
+ 
 
 return (
   <ScrollView>
@@ -93,7 +85,7 @@ return (
           layout="default"
           layoutCardOffset={9}
           ref={isCarousel}
-          data={Object.entries(object)}
+          data={convData(data,lenSpec,lensName)}
           renderItem={CarouselCardItem}
           sliderWidth={SLIDER_WIDTH}
           onSnapToItem={(index) => setIndex(index)}
@@ -130,13 +122,14 @@ return (
           layout="default"
           layoutCardOffset={7}
           ref={isCarousel}
-          data={Object.entries(object2)}
+          data={convData(data,constantsArr,constants)}
           renderItem={CarouselCardItem}
           sliderWidth={SLIDER_WIDTH}
           itemWidth={ITEM_WIDTH}
           inactiveSlideShift={0}
           useScrollView={true}
           onSnapToItem={(index) => setIndex2(index)}
+       
         />
       </View>
     </SafeAreaView>
