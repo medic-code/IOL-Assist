@@ -52,6 +52,6 @@ https://limitless-brushlands-87925.herokuapp.com/
 
 ## Preview 
  <img src="https://user-images.githubusercontent.com/60046611/133442612-e9fc7f4b-2b31-4539-98e9-48a447885ad3.jpeg" width="350" height="600">
- <img src="https://user-images.githubusercontent.com/60046611/132953222-810913b4-b0ca-440c-bf29-6dc66e700645.jpeg" width="350" height="600">
+ <img src="https://user-images.githubusercontent.com/60046611/133443800-ccf91163-b403-466c-9291-354426e9beb0.jpeg" width="350" height="600">
 
 
