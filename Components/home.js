@@ -51,15 +51,15 @@ const Home = ({ navigation }) => {
     <View style={styles.container}>
       <Button title="IOL Page" onPress={() => navigation.navigate('IOL Page')} />
       <View style={styles.header}>
-      <Title1 style={styles.title}>IOL Assist</Title1>
-        <View style={{
-          flex:1,
-          padding:25,
-          width: '98%',
-          alignSelf: 'center',
-          justifyContent: 'center'
-        }}>
-       
+        <Title1 style={styles.title}>IOL Assist</Title1>
+          <View style={{
+            flex:1,
+            padding:25,
+            width: '98%',
+            alignSelf: 'center',
+            justifyContent: 'center'
+          }}>
+        
         <FlatList
           data={results}
          
@@ -70,18 +70,21 @@ const Home = ({ navigation }) => {
           ListHeaderComponent={renderHeader()}
           />
         <StatusBar style="auto" />
-        </View>
+      </View>
         <Text style={{marginLeft: 10, fontWeight: '600'}}>Search By</Text>
         <View style={styles.buttons}>
           
           <Button style={styles.button} inline rounded>Company</Button>
           <Button style={styles.button}inline rounded>Type</Button>
         </View>
-        <Text style={{marginLeft: 10, fontWeight: '600'}}>Tools</Text>
-        <View style={styles.buttons}>
-          <Button style={styles.button} inline rounded>Sulcus Change</Button>
+        <View style={{flex:6}}>
+          <Text style={{marginLeft: 10, fontWeight: '600'}}>Tools</Text>
+          <View style={styles.buttons}>
+            <Button style={styles.button} inline rounded>Sulcus Change</Button>
+          </View>
         </View>
-        <Title1 style={styles.title}>My Favourites</Title1>
+       
+        {/* <Title1 style={styles.title}>My Favourites</Title1>
         <View style={styles.titles}>
         <Icon name={'reader'} color={'blue'} size={30}/>
         <Text style={styles.text}>SN60WF</Text>
@@ -91,7 +94,7 @@ const Home = ({ navigation }) => {
        </View>
         <View style={styles.titles}>
         <Icon name={'reader'}  color={'blue'}size={30}/><Text style={styles.text}>STAAR</Text>
-        </View>
+        </View> */}
       
       </View>
       
@@ -106,57 +109,21 @@ const styles = StyleSheet.create({
     flex:1,
     paddingTop: 16,
     backgroundColor: 'white',
+    flexDirection: 'column'
    
-  },container2: {
-    marginTop: 20,
-    flex: 0.4,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-},
-  topBar: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingVertical: 10,
-    paddingHorizontal: 15,
   },
   title: {
     fontWeight: 'bold',
     paddingHorizontal: 15,
   },
-  searchBar: {
-    height: 40,
-    width: 300,
-    marginLeft:10,
-    borderWidth:0.5,
-    borderColor: 'rgb(142,142,147)',
-    borderTopLeftRadius: 5,
-    borderBottomLeftRadius: 5,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.8,
-    shadowRadius: 1, 
-  },
   header: { flex:1},
   buttons: {
-   
+    flex:2,
     flexDirection: 'row',
     justifyContent: 'space-around',
     paddingVertical: 10,
     paddingHorizontal: 10
   },
-  
- searchButton: {
-    backgroundColor: `rgb(255,149,0)`,
-        paddingVertical: 10,
-    paddingHorizontal: 10,
-    borderTopRightRadius: 5,
-    borderBottomRightRadius: 5,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.8,
-    shadowRadius: 1, 
- },
   button: {
     height: 80,
     width: 160,
