@@ -38,7 +38,7 @@ const Iol = ({route,navigation, }) => {
   const [index2, setIndex2] = React.useState(0)
   const {data}  = route.params
 
-  const lenSpec = ['hapmaterial', 'opmaterial','design','range','steps','opticdia','length','haptic']
+  const lenSpec = ['hapmaterial', 'opmaterial','design','range','steps','opticdia','length']
   const lensName = ['Haptic Material', 'Optic Material', 'Design', 'Range','Steps','Optical Diameter','Overall Length']
   const constantsArr = ['nominal','srk2','srkt','hoffer','barret','haigis','holladay'];
   const constants = ['Nominal','SRK/T','SRK II','Hoffer Q','Barret','Haigis','Holladay 1'];
@@ -47,14 +47,10 @@ const Iol = ({route,navigation, }) => {
 return (
   <ScrollView>
   <View style={styles.container}> 
-    {/* <Button
-        title="Go to Home"
-        onPress={() => navigation.navigate('Home')}
-      /> */}
   <View style={{flex:1, padding:10, flexDirection: 'row',flexWrap: 'wrap', backgroundColor:'rgba(99, 142, 187, 0.5)' }}>
     <Icon name={'reader'} color={'blue'} size={40}/>
     <View style={{flex:1, flexDirection: 'column', marginLeft: 30, }}>
-    <Title1 style={styles.title}>{data.lens}</Title1> 
+    {data.lens.split(' ').map(elem => <Title1 style={styles.title} key={elem}>{elem}</Title1>)}
     
     </View>
    
@@ -67,8 +63,8 @@ return (
       <Text style={{fontSize: 16, marginLeft: 10,color: 'rgb(54,69,79)'}}><Text style={{fontWeight:'bold'}}>Haptic Material:</Text> {data.hapmaterial}</Text>
       <Text style={{fontSize: 16, marginLeft: 10,color: 'rgb(54,69,79)'}}><Text style={{fontWeight:'bold'}}>Optic Material: </Text>{data.opmaterial}</Text>
       <Text style={{fontSize: 16, marginLeft: 10,fontWeight:'bold',color: 'rgb(54,69,79)'}}>Dimensions:</Text>
-      <Text style={{fontSize: 16, marginLeft: 50,color: 'rgb(54,69,79)'}}>HAPTIC: {data.haptic} </Text>
-      <Text style={{fontSize: 16,marginLeft: 50,marginBottom: 10,color: 'rgb(54,69,79)'}}>OPTIC:  {data.opticdia} </Text>
+      <Text style={{fontSize: 16, marginLeft: 50,color: 'rgb(54,69,79)'}}>HAPTIC: {data.length}</Text>
+      <Text style={{fontSize: 16,marginLeft: 50,marginBottom: 10,color: 'rgb(54,69,79)'}}>OPTIC:  {data.opticdia}</Text>
 
     </View>
     <View style={{flex:0.5,marginLeft:20, marginTop: 5}}>
