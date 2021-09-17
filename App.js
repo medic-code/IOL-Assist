@@ -4,6 +4,7 @@ import { SafeAreaView, StyleSheet } from 'react-native'
 import { ThemeProvider } from 'react-native-ios-kit';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+
 import Home from './Components/home'
 import iol from './Components/iol';
 
@@ -21,9 +22,9 @@ export default function App() {
     <NavigationContainer>
       <ThemeProvider>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
   
-          <Stack.Screen name="IOL Page" component={iol} options={{title: 'IOL Page'}} />
+          <Stack.Screen name="IOL Page" component={iol} options={{ headerShown: false}} />
 
       </Stack.Navigator>
     </ThemeProvider>

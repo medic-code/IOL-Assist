@@ -4,6 +4,7 @@ import {Title1} from 'react-native-ios-kit';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 import CarouselCardItem, {SLIDER_WIDTH, ITEM_WIDTH} from './carousel';
 import convData from './services/utils';
+import { ModernHeader } from "@freakycoder/react-native-header-view";
 
 const styles = StyleSheet.create({
   container: {
@@ -29,7 +30,7 @@ const styles = StyleSheet.create({
 
 });
 
-const Iol = ({route}) => {
+const Iol = ({route,navigation}) => {
   const isCarousel = React.useRef(null);
 
   const [index, setIndex] = React.useState(0)
@@ -43,7 +44,15 @@ const Iol = ({route}) => {
  
 
 return (
+  
   <ScrollView>
+    <ModernHeader 
+     text=""
+     backgroundColor="#fdfdfd"
+     leftIconName='ios-arrow-back'
+     leftIconOnPress={() => navigation.goBack()}
+     rightDisable="false"
+    />
   <View style={styles.container}> 
   <View style={{flex:1, padding:10, flexDirection: 'row',flexWrap: 'wrap', backgroundColor:'rgba(99, 142, 187, 0.5)' }}>
     <Image source={require('../assets/3piece.png')} style={{marginLeft: 30, width: 50, height:100}}/>

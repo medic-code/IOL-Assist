@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingHorizontal: 15,
   },
-  header: { flex:1},
+  header: { flex:1, marginTop: 30},
   buttons: {
     flex:2,
     flexDirection: 'row',
