@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Aaron\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @freakcoder/react-native-header-view
+  C:\Program Files\nodejs\node.exe C:\Users\Aaron\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-web
 
 PATH: 
   C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Calibre2\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\GnuWin32\bin;C:\MinGW\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\PostgreSQL\12\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Aaron\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Aaron\AppData\Local\Programs\Python\Python37\;C:\Users\Aaron\AppData\Local\Microsoft\WindowsApps;C:\Users\Aaron\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Aaron\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\mongos;C:\Users\Aaron\AppData\Local\Microsoft\WindowsApps;C:\Users\Aaron\AppData\Roaming\npm;C:\Users\Aaron\AppData\Local\Programs\Microsoft VS Code\bin
@@ -14,17 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@freakcoder%2freact-native-header-view: Not found
-      at Request.params.callback [as _callback] (C:\Users\Aaron\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
-      at Request.self.callback (C:\Users\Aaron\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
-      at Request.emit (events.js:314:20)
-      at Request.<anonymous> (C:\Users\Aaron\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
-      at Request.emit (events.js:314:20)
-      at IncomingMessage.<anonymous> (C:\Users\Aaron\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
-      at Object.onceWrapper (events.js:420:28)
-      at IncomingMessage.emit (events.js:326:22)
-      at endReadableNT (_stream_readable.js:1226:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+  Error: EPERM: operation not permitted, open 'C:\Users\Aaron\projects\iol-assist\node_modules\copy-webpack-plugin\node_modules\.bin\webpack'
 
 npm manifest: 
   {
@@ -38,6 +28,9 @@ npm manifest:
       "build": "expo build:web"
     },
     "dependencies": {
+      "@freakycoder/react-native-bounceable": "^0.2.5",
+      "@freakycoder/react-native-header-view": "^1.1.1",
+      "@freakycoder/react-native-helpers": "^1.0.2",
       "@react-navigation/native": "^6.0.2",
       "@react-navigation/stack": "^6.0.7",
       "expo": "~42.0.1",
@@ -45,11 +38,15 @@ npm manifest:
       "react": "16.13.1",
       "react-dom": "16.13.1",
       "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+      "react-native-apple-header": "^0.1.1",
+      "react-native-classic-header": "^0.1.7",
       "react-native-dynamic-vector-icons": "^1.1.6",
       "react-native-gesture-handler": "^1.10.3",
+      "react-native-gorgeous-header": "^0.1.0",
       "react-native-ios-kit": "^0.0.22",
       "react-native-modern-header": "^0.1.0",
       "react-native-paper": "^4.9.2",
+      "react-native-profile-header": "^0.1.1",
       "react-native-safe-area-context": "3.2.0",
       "react-native-screens": "~3.4.0",
       "react-native-snap-carousel": "^3.9.1",
@@ -1585,6 +1582,26 @@ Lockfile:
       chalk "^4.1.0"
       find-up "^5.0.0"
       js-yaml "^4.1.0"
+  
+  "@freakycoder/react-native-bounceable@^0.2.5":
+    version "0.2.5"
+    resolved "https://registry.yarnpkg.com/@freakycoder/react-native-bounceable/-/react-native-bounceable-0.2.5.tgz#ad61bdafbf68465e9c2145e99c09b500ae091f0e"
+    integrity sha512-J8WBOYxbm/um7SqXYneduZ08T5Kin9z+ixsS3wOLtpeNvKscuqmDEgsgefTYydeSIoI5dOfWmklnRRgu5i/8nA==
+  
+  "@freakycoder/react-native-header-view@^1.1.1":
+    version "1.1.1"
+    resolved "https://registry.yarnpkg.com/@freakycoder/react-native-header-view/-/react-native-header-view-1.1.1.tgz#b47b145826c6a878f67cb18b27fd5c2677dbcb89"
+    integrity sha512-56Hkly+fI/0yjeAc5nIHdhl2sTiX0AoZ6gK8jnEmzYbyyuJmSH1unOXwjJlhq2Mq9SpVvCsQoLAkd2/o9hZgwg==
+  
+  "@freakycoder/react-native-helpers@1.0.1":
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/@freakycoder/react-native-helpers/-/react-native-helpers-1.0.1.tgz#e910cbc22bfcd7d7979d6dd438bb6fa41b86374c"
+    integrity sha512-qKYcSD5mFQTL1J6AfwrQGdZ+5+Imf/zKAN9es+JXWGDQi+mpHQWOiNJXkeLPEWvx1izIaX9RyIYCBNa9SufXFw==
+  
+  "@freakycoder/react-native-helpers@^1.0.2":
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/@freakycoder/react-native-helpers/-/react-native-helpers-1.0.2.tgz#db97b9634d79cd92cfd735a2d797f94c65206dbb"
+    integrity sha512-VBFNOQg7VTCyAP/ty0O2anlOrZtBPThwMXywU0IMbkcUkk38UO1DQ6A93NMstA2vf1ozJ4QqKd/IIv9rgrcR2A==
   
   "@gar/promisify@^1.0.1":
     version "1.1.2"
@@ -10344,7 +10361,20 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
     integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
   
-  react-native-dynamic-vector-icons@^1.1.6:
+  react-native-apple-header@^0.1.1:
+    version "0.1.1"
+    resolved "https://registry.yarnpkg.com/react-native-apple-header/-/react-native-apple-header-0.1.1.tgz#aa8bd7eb6b7f75626b7d7e6b348d79db670413b0"
+    integrity sha512-olhk1icxbmX4p320+iE3NunTQOlqBHMxHp/HcQ3XiUpPzekLPhJKK0r5dZfp80LEdcdxnZKhJMJqq0FquIG/VQ==
+  
+  react-native-classic-header@^0.1.7:
+    version "0.1.7"
+    resolved "https://registry.yarnpkg.com/react-native-classic-header/-/react-native-classic-header-0.1.7.tgz#eea9d7469fdd1bc567a78780a6b17c054ded3061"
+    integrity sha512-80mOM7t2GW7NNxV5A8nM1p0KGfcWfhoYy7eYtUSF8D/lN2qJRRinwoM0zt5Ld6E6MQ3H6MOsAFUajL6ZlQZBpg==
+    dependencies:
+      "@freakycoder/react-native-helpers" "1.0.1"
+      react-native-dynamic-vector-icons "^1.0.0"
+  
+  react-native-dynamic-vector-icons@^1.0.0, react-native-dynamic-vector-icons@^1.1.6:
     version "1.1.6"
     resolved "https://registry.yarnpkg.com/react-native-dynamic-vector-icons/-/react-native-dynamic-vector-icons-1.1.6.tgz#a032cf647eb6934cbec56562deda772ca073ac67"
     integrity sha512-tz098Wv/4TI70BRWfshSyVzWsoV4PRdp6fMMA7GRmxsaERfYshEy3Rs3bvD9tVjD+zKUcmM4Ce7bmAoJkGSNdg==
@@ -10359,6 +10389,11 @@ Lockfile:
       hoist-non-react-statics "^3.3.0"
       invariant "^2.2.4"
       prop-types "^15.7.2"
+  
+  react-native-gorgeous-header@^0.1.0:
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/react-native-gorgeous-header/-/react-native-gorgeous-header-0.1.0.tgz#6d6dbcd859f123c31bb5036885be0ac5dbefb353"
+    integrity sha512-lJh+ZpY7lxQnJ45mZRKYjV4wxL3qKtUdXuE4PAq93YDaPpNT2GWyOHVhs/WZqM25vjTcH47/9MfIh/GCuxhjkw==
   
   react-native-ios-kit@^0.0.22:
     version "0.0.22"
@@ -10387,6 +10422,11 @@ Lockfile:
       "@callstack/react-theme-provider" "^3.0.6"
       color "^3.1.2"
       react-native-iphone-x-helper "^1.3.1"
+  
+  react-native-profile-header@^0.1.1:
+    version "0.1.1"
+    resolved "https://registry.yarnpkg.com/react-native-profile-header/-/react-native-profile-header-0.1.1.tgz#0047a04486f8f10d0bfdd22ea33d5b49c77e8f56"
+    integrity sha512-PUYmoAXoUmHEpZTYS1P4idFEcCGMSyp/xLl6Gk1qvMqr6xjFF+q+UggHor9CIGcN+rCS08CXh6lbpmVANwbJBA==
   
   react-native-safe-area-context@3.2.0:
     version "3.2.0"
