@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {View, StyleSheet, Text, FlatList} from 'react-native';
+import {View, StyleSheet, Text, FlatList, TouchableHighlight} from 'react-native';
 import {Title1, Button,withTheme, Icon } from 'react-native-ios-kit';
 import { Searchbar } from 'react-native-paper';
 import { StatusBar } from "expo-status-bar";
@@ -54,7 +54,7 @@ const Home = ({ navigation }) => {
         <Title1 style={styles.title}>IOL Assist</Title1>
           <View style={{
             flex:1,
-            padding:25,
+            padding:10,
             width: '98%',
             alignSelf: 'center',
             justifyContent: 'center'
@@ -64,16 +64,23 @@ const Home = ({ navigation }) => {
           data={results}
          
           renderItem={({ item }) => (
-            <Text onPress={() => navigation.navigate('IOL Page',{data: item})} style={{ padding: 10 }}>{item.lens} </Text>
+            <TouchableHighlight 
+             onPress={() => navigation.navigate('IOL Page',{data: item})}
+             >
+            <View style={{backgroundColor: 'white'}}>
+            <Text  style={{ margin:10, padding:10 }}>{item.lens} </Text>
+            </View>
+            </TouchableHighlight>
           )}
           ItemSeperatorComponent={renderSeperator()}
           ListHeaderComponent={renderHeader()}
           />
+   
         <StatusBar style="auto" />
       </View>
-        <Text style={{marginLeft: 10, fontWeight: '600'}}>Search By</Text>
+      <Text style={{marginLeft: 10, fontWeight: '600'}}>Search By</Text>
         <View style={styles.buttons}>
-          
+      
           <Button style={styles.button} inline rounded>Company</Button>
           <Button style={styles.button}inline rounded>Type</Button>
         </View>
@@ -118,7 +125,7 @@ const styles = StyleSheet.create({
   },
   header: { flex:1, marginTop: 30},
   buttons: {
-    flex:2,
+    flex:0.7,
     flexDirection: 'row',
     justifyContent: 'space-around',
     paddingVertical: 10,
