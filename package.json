@@ -9,6 +9,7 @@
     "build": "expo build:web"
   },
   "dependencies": {
+    "@expo/webpack-config": "^0.15.0",
     "@freakycoder/react-native-bounceable": "^0.2.5",
     "@freakycoder/react-native-header-view": "^1.1.1",
     "@freakycoder/react-native-helpers": "^1.0.2",
