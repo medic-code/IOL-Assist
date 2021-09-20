@@ -1,10 +1,9 @@
 import React from 'react'
 import {View, Text, Dimensions} from 'react-native';
 
-export const SLIDER_WIDTH = Dimensions.get('window').width - 120;
+export const SLIDER_WIDTH = Dimensions.get('window').width - 100;
 
 export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 1.2);
-export const ITEM_HEIGHT = 400;
 
 const CarouselCardItem = ({item,index}) => {
   
