@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from './Components/home'
 import iol from './Components/iol';
+import { Icon } from 'react-native-vector-icons/FontAwesome';
 
 const Stack = createStackNavigator();
 const styles = StyleSheet.create({
@@ -24,7 +25,9 @@ export default function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
   
-          <Stack.Screen name="IOL Page" component={iol} options={{ headerShown: false}} />
+          <Stack.Screen name="IOL Page" component={iol} options={{ 
+          
+          }} />
 
       </Stack.Navigator>
     </ThemeProvider>

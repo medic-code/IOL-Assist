@@ -46,13 +46,7 @@ const Iol = ({route,navigation}) => {
 return (
   
   <ScrollView>
-    <ModernHeader 
-     text=""
-     backgroundColor="#fdfdfd"
-     leftIconName='ios-arrow-back'
-     leftIconOnPress={() => navigation.goBack()}
-     rightDisable="false"
-    />
+    
   <View style={styles.container}> 
   <View style={{flex:1, padding:10, flexDirection: 'row',flexWrap: 'wrap', backgroundColor:'rgba(99, 142, 187, 0.5)' }}>
     <Image source={require('../assets/3piece.png')} style={{marginLeft: 30, width: 50, height:100}}/>
