@@ -12,7 +12,8 @@ IOL Assist provides a no-frills, straight-forward reference to IOL details for e
 
 ## Link for Inputting IOL Data
 
-https://limitless-brushlands-87925.herokuapp.com/
+lens data https://limitless-brushlands-87925.herokuapp.com/
+viscoelastic data https://limitless-brushlands-87925.herokuapp.com/visco.html
 
 ## How to Setup Project for Development
 
